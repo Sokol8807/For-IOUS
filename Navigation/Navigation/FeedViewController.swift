@@ -20,6 +20,7 @@ class FeedViewController: UIViewController {
         button.center = view.center
         button.setTitle("Go to Post", for: .normal)
         button.backgroundColor = .green
+        button.layer.cornerRadius = 10
         button.addTarget(self, action: #selector(tapAction), for: .touchUpInside)
         view.addSubview(button)
     }
